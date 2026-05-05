@@ -18,8 +18,14 @@ import com.example.demo.service.UserService;
 public class HomeController {
 	Logger logger = LoggerFactory.getLogger(HomeController.class);
 
+
+
+
 	@Autowired
 	UserService userService;
+
+
+
 
 	@Autowired
 	private BCryptPasswordEncoder passwordEncoder;
@@ -29,6 +35,9 @@ public class HomeController {
 		return "Index";
 	}
 
+
+
+	
 	@GetMapping("/NewComplaint")
 	public String redirectNewComplaint() {
 		return "redirect:/user/NewComplaint";
