@@ -18,14 +18,8 @@ import com.example.demo.service.UserService;
 public class HomeController {
 	Logger logger = LoggerFactory.getLogger(HomeController.class);
 
-
-
-
 	@Autowired
 	UserService userService;
-
-
-
 
 	@Autowired
 	private BCryptPasswordEncoder passwordEncoder;
