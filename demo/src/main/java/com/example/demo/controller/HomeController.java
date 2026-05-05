@@ -29,6 +29,9 @@ public class HomeController {
 		return "Index";
 	}
 
+
+
+	
 	@GetMapping("/NewComplaint")
 	public String redirectNewComplaint() {
 		return "redirect:/user/NewComplaint";
